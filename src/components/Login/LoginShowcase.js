@@ -2,7 +2,7 @@ import React from 'react';
 
 const highlights = [
   {
-    title: 'Live dashboards',
+    title: 'Live dashboards by Awais',
     copy: 'Pulse across every project, refreshed in real time.',
     accent: 'sync',
   },

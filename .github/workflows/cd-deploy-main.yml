@@ -1,0 +1,12 @@
+name: CD - Deploy to Production
+
+on:
+  push:
+    branches: ["main"] # Only run when code is accepted into main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Amplify Build
+        run: curl -X POST -d {} "${{ secrets.AMPLIFY_WEBHOOK_URL }}" -H "Content-Type:application/json"
